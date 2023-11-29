@@ -40,7 +40,7 @@ var loginBtn=document.querySelector('.loginBtn');
 //check fields & Login
 function login(e){
     e.preventDefault();
-    if(userName.value.trim()==''|| userPass.value.trim()==''){
+    if (userName.value.trim() === '' || userPass.value.trim() === '') {
         alert('欄位不可輸入空白鍵');
         return;
     }
@@ -48,7 +48,7 @@ function login(e){
     let loginlink='https://hex-escape-room.herokuapp.com/api/user/signin';
     xhr.open('POST',loginlink,true);
     xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-    xhr.send(`=${userName.value}&password=${userPass.value}`)
+    xhr.send(`username=${userName.value}&pass=${userPass.value}`)
 
     xhr.onload=function(){
         let backData= JSON.parse(xhr.responseText);
