@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Sing up</h1>
+<form action="https://hexschool-tutorial.herokuapp.com/api/signup" method="post">
+<label for="username">Email</label>
+<input type="text" class="username" name="'username" placeholder="name">
+<p class='nameCheck'></p>
+<br>
+<label for="password">Password</label>
+<input type="text" class="password" name="password" placeholder="password">
+<br>
+<input type="submit" value="submit" class="btn">
+    </form>
+
+
+    <h2>Login</h2>
+    <form action="https://hex-escape-room.herokuapp.com/api/user/signin" method="post">
+        <label for="useraccount">User Name</label>
+        <input type="text" class="loginName" name="useraccount" placeholder="type username">
+        <label for="pass">Password</label>
+        <input type="text" lass="loginPass"name="pass" placeholder="password">
+        <input type="submit" class="loginBtn"value="login">
+
+    </form>
+    <script src="all.js"></script>
+</body>
+</html>
